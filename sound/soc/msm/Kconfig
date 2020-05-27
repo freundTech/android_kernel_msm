@@ -271,6 +271,7 @@ config SND_SOC_MSM8909
 	select SND_SOC_DIGITAL_CDC
 	select SND_SOC_WSA881X_ANALOG
 	select SND_SOC_WSA881X
+    select SND_SOC_WCD9330
 	select SND_SOC_WCD9335
         select SND_SOC_CPE
 	select SND_HWDEP
