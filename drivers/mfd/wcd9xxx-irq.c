@@ -405,13 +405,13 @@ void wcd9xxx_free_irq(struct wcd9xxx_core_resource *wcd9xxx_res,
 	free_irq(phyirq_to_virq(wcd9xxx_res, irq), data);
 }
 
-void wcd9xxx_enable_irq(struct wcd9xxx_core_resource *wcd9xxx_res, int irq)
+static void wcd9xxx_enable_irq(struct wcd9xxx_core_resource *wcd9xxx_res, int irq)
 {
 	if (wcd9xxx_res->irq)
 		enable_irq(phyirq_to_virq(wcd9xxx_res, irq));
 }
 
-void wcd9xxx_disable_irq(struct wcd9xxx_core_resource *wcd9xxx_res, int irq)
+static void wcd9xxx_disable_irq(struct wcd9xxx_core_resource *wcd9xxx_res, int irq)
 {
 	if (wcd9xxx_res->irq)
 		disable_irq_nosync(phyirq_to_virq(wcd9xxx_res, irq));
