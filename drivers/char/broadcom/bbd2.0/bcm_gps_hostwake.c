@@ -39,7 +39,7 @@
 #include <linux/gpio.h>
 #include <linux/wakelock.h>
 
-#include <bcm_gps_hostwake.h>
+#include "bcm_gps_hostwake.h"
 
 #define GPS_VERSION	"1.01"
 #define PFX			"bcmgps: "
